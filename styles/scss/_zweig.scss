@@ -1,0 +1,73 @@
+.zweig {
+
+    display: flex;
+    justify-content: space-between;
+    
+    margin-bottom: 160px;
+    
+    &__wrapper-txt {
+        display: flex;
+        flex-direction: column;
+        gap: 465px;
+    }
+
+    &__container-top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__container-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+
+    &__txt {
+        font-family: 'menlo';
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.4);
+        text-transform: uppercase;
+    }
+
+    &__title-top {
+        font-family: 'menlo';
+        font-size: 32px;
+        text-transform: uppercase;
+    }
+
+    &__txt-bottom {
+        font-family: 'menlo';
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: flex-end;
+        gap: 30px;
+        position: relative;
+    }
+
+    &__container-img {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        flex: content;
+    }
+
+    &__img-center {
+        max-width: 630px;
+        max-height: 556px;
+    }
+
+
+    &__line {
+        background: black;
+        width: 1px;
+        height: 556px;
+        position: absolute;
+        top: 0px;
+        left: -30px;
+    }
+}

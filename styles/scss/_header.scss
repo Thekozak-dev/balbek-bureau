@@ -1,0 +1,29 @@
+.header {
+    padding-top: 30px;
+
+    &__wrapper {
+        display: flex;
+        gap: 80px;
+        align-items: center;
+    }
+
+    &__nav {
+        display: flex;
+        gap: 50px;
+    }
+
+    &__link {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: black;
+        font-family: 'menlo';
+        font-size: 12px;
+    }
+
+    &__link:hover {
+        background: black;
+        color: white;
+        transition: .5s ease;
+        
+    }
+}

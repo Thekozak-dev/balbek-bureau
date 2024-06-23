@@ -1,0 +1,106 @@
+.team {
+    margin-bottom: 160px;
+
+    &__container-txt {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__title {
+        font-family: 'sans regular';
+        font-size: 46px;
+        text-transform: uppercase;
+    }
+
+    &__txt {
+        font-family: 'menlo';
+        font-size: 16px;
+        color: rgba(0, 0, 0, 0.4);
+        text-transform: uppercase;
+    }
+
+    &__container-main {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        max-width: 630px;
+    }
+
+    &__line-bottom {
+        position: absolute;
+        bottom: -218px;
+        height: 1px;
+        background: black;
+        width: 100%;
+    }
+
+    &__txt-main {
+        font-family: 'menlo';
+        font-size: 18px;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    
+
+    @keyframes imgAnimation {
+        0% {
+            background-image: url(../images/animation-foto-1.jpg);
+        }
+
+        11% {
+            background-image: url(../images/animation-foto-2.jpg);
+        }
+
+        22% {
+            background-image: url(../images/animation-foto-3.jpg);
+        }
+
+        33% {
+            background-image: url(../images/animation-foto-4.jpg);
+        }
+
+        44% {
+            background-image: url(../images/animation-foto-5.jpg);
+        }
+
+        55% {
+            background-image: url(../images/animation-foto-6.jpg);
+        }
+
+        66% {
+            background-image: url(../images/animation-foto-7.jpg);
+        }
+
+        77% {
+            background-image: url(../images/animation-foto-8.jpg);
+        }
+
+        88% {
+            background-image: url(../images/animation-foto-9.jpg);
+        }
+
+        99% {
+            background-image: url(../images/animation-foto-1.jpg);
+        }
+    }
+
+
+    &__container-img {
+        margin-left: 30px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation: imgAnimation 20s ease-out 1s infinite;
+        background-image: url(../images/animation-foto-1.jpg);
+        width: 630px;
+        height: 556px;
+    }
+}

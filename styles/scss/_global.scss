@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'sans bold';
+    src: url('../fonts/GillSansBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'sans regular';
+    src: url('../fonts/GillSansRegular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'menlo';
+    src: url('../fonts/MenloRegular.ttf') format('truetype');
+}
+
+body {
+    width: calc(100% - 75px - 75px);
+    margin: 0% auto;
+}
+
+body > * {
+    padding: 0px;
+    margin: 0px;
+}
+
+span {
+    display: inline-block;
+}

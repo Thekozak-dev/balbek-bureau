@@ -1,0 +1,39 @@
+.animation {
+    width: calc(100% - 165px - 165px);
+    margin: 0 auto;
+
+    @keyframes changeImages {
+        0% {
+            transform: translateX(0%);
+        }
+
+        25% {
+            transform: translateX(-100%);
+        }
+
+        50% {
+            transform: translateX(-200%);
+        }
+
+        75% {
+            transform: translateX(-300%);
+        }
+
+        100% {
+            transform: translateX(0%);
+        }
+    }
+
+
+    &__wrapper {
+        display: flex;
+        overflow: hidden;
+        margin-bottom: 160px;
+    }
+
+    &__img-one, &__img-two, &__img-three, &__img-four {
+        animation: changeImages 7s ease-out 1s infinite;
+    }
+
+
+}

@@ -1,0 +1,61 @@
+.footer {
+    
+    position: relative;
+    
+
+    &__wrapper{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+
+    &__container-info {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    &__container-txt {
+        display: flex;
+        flex-direction: column;
+        font-family: 'menlo';
+        font-size: 18px;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+
+    &__container-logo {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__wrapper-animation {
+        height: 50dvh;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+        bottom: 100px;
+        left: -200px;
+        transform: rotate(50deg);
+    }
+
+    &__animation {
+        animation: rotate 7s ease-out 1s infinite;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(180deg);
+        }
+
+        50% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(180deg);
+        }
+    }
+}

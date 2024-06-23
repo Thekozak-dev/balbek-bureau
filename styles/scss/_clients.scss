@@ -1,0 +1,25 @@
+.clients {
+        margin-bottom: 450px;
+
+    &__title {
+        font-family: 'sans regular';
+        font-size: 46px;
+        text-transform: uppercase;
+        margin-bottom: 160px;
+    }
+
+    &__container-animation {
+        display: flex;
+        animation: animationLogo 30s linear 0s infinite;
+    }
+
+    @keyframes animationLogo {
+        from {
+            transform: translateX(100%)
+        }
+        to {
+            transform: translateX(-400%)
+        }
+    }
+}
+

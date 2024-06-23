@@ -1,0 +1,38 @@
+.title {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__txt {
+        font-family: 'sans bold';
+        font-size: 100px;
+        line-height: 80px;
+        text-transform: uppercase;
+    }
+
+    &__txt-small {
+        font-family: 'menlo';
+        font-size: 12px;
+        line-height: 20px;
+        text-transform: uppercase;
+        max-width: 200px
+    }
+
+    &__container {
+        display: flex;
+        align-self: flex-start;
+        padding-left: 330px;
+    }
+
+    &__container-second {
+        display: flex;
+        gap: 20px;
+        align-self: flex-start;
+        align-items: center;
+    }
+
+    &__container-bottom {
+        margin-bottom: 60px;
+    }
+}
